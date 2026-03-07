@@ -1,14 +1,15 @@
 #include<iostream>
 using namespace std;
 
-void change(int *x)  
+void modify(int *b)  
 {
-    *x = *x + 5;
+    *b= *b + 5;
 }
 int main()
 {
-    int a = 10;
-    change(&a); 
-    cout<<a;
+    int m = 10;
+    int *j=&m;
+    modify(j); 
+    cout<<m;
     return 0;
 }

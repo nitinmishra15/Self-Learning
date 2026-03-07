@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 
-void change(int &c) { 
+void modify(int &c) { 
     c = c + 5;
 }
 int main()
 {
     int b = 10;
     cout<<"Before fn call: "<<b<<endl;
-    change(b);   
+    modify(b);   
     cout<<"After fn call: "<<b<<endl;
     return 0;
 }
