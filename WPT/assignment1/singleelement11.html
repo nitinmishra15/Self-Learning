@@ -1,0 +1,29 @@
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Single Element</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+var text = $("p").eq(0).text();
+
+$("#suv").html(text);
+alert(text);
+});
+});
+</script>
+</head>
+<body>
+<p>First Paragraph </p>
+<p>Second paragraph</p>
+<p>Third Paragraph</p>
+<button id="btn">Get Element</button>
+<p id="suv"></p>
+</body>
+</html>
