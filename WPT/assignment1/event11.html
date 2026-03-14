@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+     $(document).ready(function(){
+        $("h1").dblclick(function(){
+            alert("double clicked");
+        })
+        $("#sbn").dblclick(function(){
+            alert("button double clicked");
+        })
+        
+     })
+    </script>
 </head>
 <body>
-    
+    <h1>this is program1</h1>
+    <h1>this is program 2</h1>
+    <button id="sbn">Button</button>
 </body>
 </html>

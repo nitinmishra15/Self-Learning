@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src=" https://code.jquery.com/jquery-3.6.0.min.js "></script>
-
-    <script>
-       $(document).ready(function(){
-         $("#Link").attr("href", "https://www.microsoft.com")
-         $("#Link").text("Microsoft")
-       })
-    </script>
+<title>Change Hyperlink</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#abc").attr("href","hideheading.html");  
+    $("#abc").text("New Link");              
+});
+</script>
 </head>
 <body>
-    <button id="btn">Button</button>
-    <a href="https://www.google.com" id="Link" ></a>
-
+<a href="#" id="abc">Sample Link</a>
 </body>
 </html>
