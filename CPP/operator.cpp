@@ -1,12 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
 int main()
 {
-    int m = 5, n = 3;
-    cout<<"Unary Operator "<<++m<<endl;
-    cout<<"Logical Operator  "<<(m>n && n>0)<<endl;
-    int max = (m>n) ? m : n;
-    cout<<"Ternary Operator "<<max<<endl;
+    int a = 10, b = 20;
+    cout << "Unary operator: " << -a << endl;
+    cout << "Binary operator: " << a + b << endl;
+    a += 5;
+    cout << "Assignment operator: " << a << endl;
+    cout << "Logical operator (a > b): " << (a > b) << endl;
+    cout << "Bitwise operator (a & b): " << (a & b) << endl;
     return 0;
 }

@@ -1,15 +1,12 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-void modify(int *b)  
-{
-    *b= *b + 5;
+void modifyValue(int *value) {
+    *value = 20;
 }
-int main()
-{
-    int m = 10;
-    int *j=&m;
-    modify(j); 
-    cout<<m;
+int main(){
+    int num = 10;
+    cout<<"Before function call:"<<num<<endl;
+    modifyValue(&num);
+    cout<<"After function call:"<<num<<endl;
     return 0;
 }

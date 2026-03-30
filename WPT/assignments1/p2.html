@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script>
+      $(document).ready(function(){
+        $("#suv").dblclick(function(){
+        alert("button double click ");
+        });
+        $("h2").click(function(){
+    
+            $("h2").hide();
+            // alert("double clicked ");
+        })
+        $("#abc").attr("href","event11.html");
+      })
+    </script>
+</head>
+<body>
+    <button id="suv">button</button>
+    <h2>paragraph 1</h2>
+    <h2> paragraph 2</h2>
+    <h3>paragraph3</h3>
+    <a href="#" id="abc">New Link</a>
+    
+</body>
+</html>
